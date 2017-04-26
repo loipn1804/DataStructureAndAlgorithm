@@ -45,7 +45,7 @@ public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.Vi
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         final ActivityInfo activityInfo = mListData.get(position);
-        holder.txtActivity.setText(activityInfo.loadLabel(packageManager));
+        holder.txtActivity.setText(activityInfo.name);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

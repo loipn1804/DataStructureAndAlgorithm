@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onStop() {
-        Log.e("LIO", "DataStructureAndAlgorithm onStop");
         super.onStop();
     }
 }
