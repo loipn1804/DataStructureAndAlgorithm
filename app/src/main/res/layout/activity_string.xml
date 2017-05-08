@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Action"/>
+
+    <Button
+        android:id="@+id/btnImmutable"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Immutable"/>
+
+    <Button
+        android:id="@+id/btnStringBuffer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="StringBuffer"/>
+
+    <Button
+        android:id="@+id/btnStringBuilder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="StringBuilder"/>
+</LinearLayout>

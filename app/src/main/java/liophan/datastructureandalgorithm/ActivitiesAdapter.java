@@ -30,11 +30,13 @@ public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.Vi
     private Context mContext;
     private List<ActivityInfo> mListData;
     private PackageManager packageManager;
+    private String packageName;
 
     public ActivitiesAdapter(Context context, List<ActivityInfo> listData) {
         mListData = listData;
         mContext = context;
         packageManager = context.getPackageManager();
+        packageName = context.getPackageName() + ".list.";
     }
 
     @Override
@@ -45,7 +47,7 @@ public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.Vi
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         final ActivityInfo activityInfo = mListData.get(position);
-        holder.txtActivity.setText(activityInfo.name);
+        holder.txtActivity.setText(activityInfo.name.replace(packageName, ""));
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
